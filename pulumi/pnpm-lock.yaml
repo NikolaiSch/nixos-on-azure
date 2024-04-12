@@ -14,6 +14,12 @@ importers:
       '@pulumi/pulumi':
         specifier: ^3.0.0
         version: 3.112.0
+      '@pulumi/random':
+        specifier: ^4.16.0
+        version: 4.16.0
+      '@pulumi/tls':
+        specifier: ^5.0.2
+        version: 5.0.2
     devDependencies:
       '@types/node':
         specifier: ^18
@@ -222,6 +228,12 @@ packages:
 
   '@pulumi/query@0.3.0':
     resolution: {integrity: sha512-xfo+yLRM2zVjVEA4p23IjQWzyWl1ZhWOGobsBqRpIarzLvwNH/RAGaoehdxlhx4X92302DrpdIFgTICMN4P38w==}
+
+  '@pulumi/random@4.16.0':
+    resolution: {integrity: sha512-cHwlhy/+xTWCt7gwlJoG0q1l234YLxWtSWI61MzekWSsthbtcYruXo2bUlgcXWX5V4/lHjvQG84l5n1aTNZJoA==}
+
+  '@pulumi/tls@5.0.2':
+    resolution: {integrity: sha512-0gTZebrteV5Z82ETwjyYhyfDoSV1b55wrXU6v6jMbuARXTuHojC8zIwb/Ys3+Ydq0RubjwNoZkWVkQ98imTKdA==}
 
   '@sigstore/bundle@2.3.1':
     resolution: {integrity: sha512-eqV17lO3EIFqCWK3969Rz+J8MYrRZKw9IBHpSo6DEcEX2c+uzDFOgHE9f2MnyDpfs48LFO4hXmk9KhQ74JzU1g==}
@@ -1430,6 +1442,20 @@ snapshots:
       - supports-color
 
   '@pulumi/query@0.3.0': {}
+
+  '@pulumi/random@4.16.0':
+    dependencies:
+      '@pulumi/pulumi': 3.112.0
+    transitivePeerDependencies:
+      - bluebird
+      - supports-color
+
+  '@pulumi/tls@5.0.2':
+    dependencies:
+      '@pulumi/pulumi': 3.112.0
+    transitivePeerDependencies:
+      - bluebird
+      - supports-color
 
   '@sigstore/bundle@2.3.1':
     dependencies:
