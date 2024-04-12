@@ -3,8 +3,8 @@
 
   outputs = { nixos, ... }:
     let
-      username = "rudesome";
-      system = "x86_64-linux";
+      username = "mc";
+      system = "aarch64-darwin";
       pkgs = import nixos { inherit system; };
     in
     {
@@ -32,19 +32,6 @@
             ];
           };
 
-      devShells."aarch64-darwin".default =
-        let
-          pkgs = import nixos { system = "aarch64-darwin"; };
-        in
-        with pkgs;
-        pkgs.mkShell
-          {
-            buildinputs = with pkgs; [
-              azure-cli
-              azure-storage-azcopy
-              jq
-            ];
-          };
     };
 }
 

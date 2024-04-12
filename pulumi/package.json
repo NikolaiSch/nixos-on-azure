@@ -1,0 +1,12 @@
+{
+    "name": "nix-azure",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^18"
+    },
+    "dependencies": {
+        "@pulumi/pulumi": "^3.0.0",
+        "@pulumi/azure-native": "^2.0.0"
+    },
+    "packageManager": "pnpm@9.0.0-rc.0+sha256.0cac5721378882bbf2aafe2c6c3dc327016a88436474956bcd9eccee27fcf678"
+}
